@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Help Desk</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome StyleSheet CSS -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- Custom Main StyleSheet CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Responsive CSS -->
+    <link href="css/responsive.css" rel="stylesheet">
+</head>
+<body>
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <h4>Main Menu</h4>
+    <ul class="nav navbar-nav">
+        <li class="a_active"><a href="index.html">home</a></li>
+        <li><a href="knowledge.html">knowledge base</a></li>
+        <li><a href="forums.html">forum</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="blog-detail.html">blog</a></li>
+        <li class="dropdown a_dropdown"><a href="#." class="dropdown-toggle" data-toggle="dropdown" >pages</a>
+            <ul class="dropdown-menu">
+                <li><a href="#."><i class="fa fa-chevron-right" aria-hidden="true"></i> Other Pages - 404</a></li>
+                <li><a href="#."><i class="fa fa-chevron-right" aria-hidden="true"></i> Login - Register Page</a></li>
+                <li><a href="#."><i class="fa fa-chevron-right" aria-hidden="true"></i> BBpress Forums</a></li>
+                <li><a href="#."><i class="fa fa-chevron-right" aria-hidden="true"></i> Create a Ticket</a></li>
+            </ul>
+        </li>
+        <li><a href="contact-us.html">contact</a></li>
+    </ul>
+    <h4>About Us</h4>
+    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie. consequat.</p>
+</div>
+<div id="a_main_wrapper">
+    <header class="a_header">
+        <div class="a_header_top">
+            <div class="container">
+                <div class="a_header_top_left">
+                    <p><span>Recent Topics : </span>How to instal wordpress on local host?</p>
+                </div>
+                <div class="a_header_top_right">
+                    <ul class="a_list">
+                        <li><a href="#." class="btn">Register</a></li>
+                        <li class="a_active"><a href="#a_login" data-toggle="modal" class="btn ">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--login  Modal -->
+        <div id="a_login" class="modal fade a_login" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="a_login_box">
+                        <ul class="nav nav-tabs">
+                            <li class=""><a data-toggle="tab" href="#register" aria-expanded="false">Register</a></li>
+                            <li class="active"><a data-toggle="tab" href="#login" aria-expanded="true">Login</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div id="register" class="tab-pane fade">
+                                <h3>HOME</h3>
+                                <p>Some content.</p>
+                            </div>
+                            <div id="login" class="a_login tab-pane fade active in">
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="User name" type="text">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Password" type="password">
+                                </div>
+                                <div class="form-group clearfix">
+                                    <div class="checkbox">
+                                        <input id="rm" value="" type="checkbox">
+                                        <label for="rm">Remmember me</label>
+                                    </div>
+                                    <button type="button" data-dismiss="modal" class="btn">Log in</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--main menu section-->
+        <div class="a_menu_section">
+            <nav class="navbar a_navbar navbar-inverse">
+                <div class="container">
+                    <div class="navbar-header">
+                        <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                        </button> -->
+                        <a class="navbar-brand" href="#">
+                            <img src="images/logo.png" alt="">
+                        </a>
+                        <ul class="nav navbar-nav navbar-right a_small_menu">
+                            <li><a href="#a_search_popup" data-toggle="modal"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                            <li><a href="#." onclick="openNav()"><i class="fa fa-align-right" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="knowledge.html">KNOWLEDGE BASE</a></li>
+                            <li class="a_active"><a href="forums.html">FORUM</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="blog-detail.html">BLOG</a></li>
+                            <li class="dropdown a_dropdown"><a href="#." class="dropdown-toggle" data-toggle="dropdown" >PAGES</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#."><i class="fa fa-chevron-right" aria-hidden="true"></i> Other Pages - 404</a></li>
+                                    <li><a href="#."><i class="fa fa-chevron-right" aria-hidden="true"></i> Login - Register Page</a></li>
+                                    <li><a href="#."><i class="fa fa-chevron-right" aria-hidden="true"></i> BBpress Forums</a></li>
+                                    <li><a href="#."><i class="fa fa-chevron-right" aria-hidden="true"></i> Create a Ticket</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact-us.html">CONTACT</a></li>
+                            <li><a href="#a_search_popup" data-toggle="modal"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                            <li><a href="#." onclick="openNav()"><i class="fa fa-align-right" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!--Search  Modal -->
+        <div id="a_search_popup" class="modal fade a_search_popup" role="dialog">
+            <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search ..." name="search">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--banner section-->
+        <div class="a_banner_section a_small_banner">
+            <div class="a_banner_inner">
+                <h2>Community Forums</h2>
+            </div>
+        </div>
+    </header>
+    <main class="a_main">
+        <!--form  section start here-->
+        <div class="a_section a_form_section">
+            <div class="container">
+                <div class="row">  
+                    <div class="col-md-8 col-sm-12">
+                        <div class="a_forum_block">
+                            <h3>General <a href="#.">The General Forum</a></h3>
+                            <div class="a_forum_row">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <h5>Announcements</h5>
+                                        <span>All announcements will appear in this forum.</span>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p>Topic:  3 <a href="#.">How about this new feature?</a></p>
+                                        <p>Posts: 3 <span>3 year, 6 months ago</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="a_forum_row">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <h5>Feedback & Suggestions</h5>
+                                        <span>We listed to our customers. Post your feedback. in this forum.</span>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p>Topic:  3 <a href="#.">Can I add videos into sidebars?</a></p>
+                                        <p>Posts: 3 <span>5 year, 2 months ago</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="a_forum_row">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <h5>Theme Support</h5>
+                                        <span>All announcements will appear in this forum.</span>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p>Topic:  3 <a href="#.">How about this new feature?</a></p>
+                                        <p>Posts: 3 <span>2 year, 4 months ago</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="a_forum_block">
+                            <h3>Product Support <a href="#.">The Product Support</a></h3>
+                            <div class="a_forum_row">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <h5>Tulip App Support</h5>
+                                        <span>All announcements will appear in this forum.</span>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p>Topic:  3 <a href="#.">How about this new feature?</a></p>
+                                        <p>Posts: 3 <span>3 year, 6 months ago</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="a_forum_row">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <h5>Producto Support</h5>
+                                        <span>We listed to our customers. Post your feedback. in this forum.</span>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p>Topic:  3 <a href="#.">Can I add videos into sidebars?</a></p>
+                                        <p>Posts: 3 <span>5 year, 2 months ago</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="a_forum_row">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <h5>Applio Support</h5>
+                                        <span>All announcements will appear in this forum.</span>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p>Topic:  3 <a href="#.">How about this new feature?</a></p>
+                                        <p>Posts: 3 <span>2 year, 4 months ago</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="a_login_box">
+                            <ul class="nav nav-tabs">
+                                <li><a data-toggle="tab" href="#register">Register</a></li>
+                                <li class="active"><a data-toggle="tab" href="#login">Login</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div id="register" class="tab-pane fade">
+                                    <h3>HOME</h3>
+                                    <p>Some content.</p>
+                                </div>
+                                <div id="login" class="a_login tab-pane fade in active">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="User name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" placeholder="Password">
+                                    </div>
+                                    <div class="form-group clearfix">
+                                        <div class="checkbox">
+                                            <input id="rm" type="checkbox" value="">
+                                            <label for="rm">Remmember me</label>
+                                        </div>
+                                        <button type="button" class="btn">Log in</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="a_q_box">
+                            <h4>Recent Topics</h4>
+                            <div class="a_q_list">
+                                <ul class="a_list">
+                                    <li><a href="#."><i class="fa fa-comment-o" aria-hidden="true"></i> Most requested features of 2015</a></li>
+                                    <li><a href="#."><i class="fa fa-comment-o" aria-hidden="true"></i> Producto compatiblity with Awesome Duck?</a></li>
+                                    <li><a href="#."><i class="fa fa-comment-o" aria-hidden="true"></i> How about this new feature?</a></li>
+                                    <li><a href="#."><i class="fa fa-comment-o" aria-hidden="true"></i> Can I add videos into sidebars?</a></li>
+                                    <li><a href="#."><i class="fa fa-comment-o" aria-hidden="true"></i> Can I add videos into sidebars?</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--footer start here-->
+    <footer class="a_footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="a_f_block">
+                        <div class="a_f_logo">
+                            <img src="images/logo.png" alt="">
+                        </div>
+                        <p>Help Desk ipsum dolor sit amet, con sectetur adipisicing elit, sed doing eiusm od tempor incididunt ut labore etics, dolore. magna aliqua. </p>
+                        <hr>
+                        <strong>Follow Us</strong>
+                        <ul class="a_list a_social_icons">
+                            <li><a href="#."><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#."><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#."><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            <li><a href="#."><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                            <li><a href="#."><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="a_f_block">
+                        <h5>Recent Post</h5>
+                        <div class="a_thumb">
+                            <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=351%C3%97378&w=61&h=61" alt="">
+                            <p>People Need Help of Us</p>
+                            <span>Dec 12, 2018</span>
+                        </div>
+                        <div class="a_thumb">
+                            <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=351%C3%97378&w=61&h=61" alt="">
+                            <p>Childs Like a Flower here</p>
+                            <span>Dec 12, 2018</span>
+                        </div>
+                        <div class="a_thumb">
+                            <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=351%C3%97378&w=61&h=61" alt="">
+                            <p>Super Story of  Volunteers</p>
+                            <span>Dec 12, 2018</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="a_f_block  a_address_block">
+                        <h5>FIND US AT</h5>
+                        <p>
+                            <strong>Main Office:</strong>
+                            <span>1234 Fleming Road Manhatten  Newyork US</span>
+                        </p>
+                        <p>
+                            <strong><a href="#."><i class="fa fa-phone" aria-hidden="true"></i> 0044 -123 4567 789</a></strong>
+                            <span><a href="#."><i class="fa fa-envelope-o" aria-hidden="true"></i> info@needcharity.com</a></span>
+                        </p>
+                        <p>
+                            <strong><a href="#."><i class="fa fa-phone" aria-hidden="true"></i> 0044 -123 4567 789</a></strong>
+                            <span><a href="#."><i class="fa fa-envelope-o" aria-hidden="true"></i> contact@needcharity.com</a></span>
+                        </p>
+                        <p>
+                            <span><i class="fa fa-calendar" aria-hidden="true"></i> Monday - Saturday: 8:00 Am - 18:00 Pm</span>
+                            <span>Sunday: Closed</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="a_f_block ">
+                        <h5>Newsletter</h5>
+                        <p>Accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium quas molestias except.</p>
+                        <hr>
+                        <form class="a_mail_form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Email Adress" name="emailAddress">
+                                <button type="button" class="btn "><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="a_copyright">
+            <div class="container">
+                <div class="a_copyright_left">
+                    <p>Copyright &copy; 2016 <a href="#.">Helpdesk</a>. All right reserved</p>
+                </div>
+                <div class="a_copyright_right">
+                    <p><a href="#.">About Us</a>  -  <a href="#.">Contact  Us</a>  -  <a href="#.">Join us</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+    <!--Bootstrap core JavaScript-->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>

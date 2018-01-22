@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Help Desk</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome StyleSheet CSS -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- Custom Main StyleSheet CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Responsive CSS -->
+    <link href="css/responsive.css" rel="stylesheet">
+</head>
+<body>
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <h4>Main Menu</h4>
+    <ul class="nav navbar-nav">
+        <li class="a_active"><a href="index.html">home</a></li>
+        <li><a href="knowledge.html">knowledge base</a></li>
+        <li><a href="forums.html">forum</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="blog-detail.html">blog</a></li>
+        <li class="dropdown a_dropdown"><a href="#." class="dropdown-toggle" data-toggle="dropdown" >pages</a>
+            <ul class="dropdown-menu">
+                <li><a href="#."><i class="fa fa-chevron-right" aria-hidden="true"></i> Other Pages - 404</a></li>
+                <li><a href="#."><i class="fa fa-chevron-right" aria-hidden="true"></i> Login - Register Page</a></li>
+                <li><a href="#."><i class="fa fa-chevron-right" aria-hidden="true"></i> BBpress Forums</a></li>
+                <li><a href="#."><i class="fa fa-chevron-right" aria-hidden="true"></i> Create a Ticket</a></li>
+            </ul>
+        </li>
+        <li><a href="contact-us.html">contact</a></li>
+    </ul>
+    <h4>About Us</h4>
+    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie. consequat.</p>
+</div>
+<div id="a_main_wrapper">
+    <header class="a_header">
+        <div class="a_header_top">
+            <div class="container">
+                <div class="a_header_top_left">
+                    <p><span>Recent Topics : </span>How to instal wordpress on local host?</p>
+                </div>
+                <div class="a_header_top_right">
+                    <ul class="a_list">
+                        <li><a href="#." class="btn">Register</a></li>
+                        <li class="a_active"><a href="#a_login" data-toggle="modal" class="btn ">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--login  Modal -->
+        <div id="a_login" class="modal fade a_login" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="a_login_box">
+                        <ul class="nav nav-tabs">
+                            <li class=""><a data-toggle="tab" href="#register" aria-expanded="false">Register</a></li>
+                            <li class="active"><a data-toggle="tab" href="#login" aria-expanded="true">Login</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div id="register" class="tab-pane fade">
+                                <h3>HOME</h3>
+                                <p>Some content.</p>
+                            </div>
+                            <div id="login" class="a_login tab-pane fade active in">
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="User name" type="text">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Password" type="password">
+                                </div>
+                                <div class="form-group clearfix">
+                                    <div class="checkbox">
+                                        <input id="rm" value="" type="checkbox">
+                                        <label for="rm">Remmember me</label>
+                                    </div>
+                                    <button type="button" data-dismiss="modal" class="btn">Log in</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--main menu section-->
+        <div class="a_menu_section">
+            <nav class="navbar a_navbar navbar-inverse">
+                <div class="container">
+                    <div class="navbar-header">
+                        <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                        </button> -->
+                        <a class="navbar-brand" href="#">
+                            <img src="images/logo.png" alt="">
+                        </a>
+                        <ul class="nav navbar-nav navbar-right a_small_menu">
+                            <li><a href="#a_search_popup" data-toggle="modal"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                            <li><a href="#." onclick="openNav()"><i class="fa fa-align-right" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="knowledge.html">KNOWLEDGE BASE</a></li>
+                            <li><a href="forums.html">FORUM</a></li>
+                            <li class="a_active"><a href="faq.html">FAQ</a></li>
+                            <li><a href="blog-detail.html">BLOG</a></li>
+                            <li class="dropdown a_dropdown"><a href="#." class="dropdown-toggle" data-toggle="dropdown" >PAGES</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#."><i class="fa fa-chevron-right" aria-hidden="true"></i> Other Pages - 404</a></li>
+                                    <li><a href="#."><i class="fa fa-chevron-right" aria-hidden="true"></i> Login - Register Page</a></li>
+                                    <li><a href="#."><i class="fa fa-chevron-right" aria-hidden="true"></i> BBpress Forums</a></li>
+                                    <li><a href="#."><i class="fa fa-chevron-right" aria-hidden="true"></i> Create a Ticket</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact-us.html">CONTACT</a></li>
+                            <li><a href="#a_search_popup" data-toggle="modal"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                            <li><a href="#." onclick="openNav()"><i class="fa fa-align-right" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!--Search  Modal -->
+        <div id="a_search_popup" class="modal fade a_search_popup" role="dialog">
+            <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search ..." name="search">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--banner section-->
+        <div class="a_banner_section a_small_banner">
+            <div class="a_banner_inner">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+        </div>
+    </header>
+    <main class="a_main">
+        <!--FAQ section start here-->
+        <div class="container">
+            <div class=" a_section a_faq_section">
+                <h4 class="a_h4">Frequently asked questions</h4>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="a_faq_list">
+                            <ul class="a_list">
+                                <li class="active"><a href="#content1" data-toggle="tab">Instalations</a></li>
+                                <li><a href="#content2" data-toggle="tab">HTML Responsive</a></li>
+                                <li><a href="#content3" data-toggle="tab">Database Migration</a></li>
+                                <li><a href="#content4" data-toggle="tab">PSD Extension</a></li>
+                                <li><a href="#content5" data-toggle="tab">Import Demo Data</a></li>
+                                <li><a href="#content6" data-toggle="tab">Translate Theme</a></li>
+                                <li><a href="#content7" data-toggle="tab">Update the Theme</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="tab-content">
+                            <div id="content1" class="tab-pane fade in active">
+                                <p  class="a_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in vol.</p>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <ul class="a_list a_arrow_list">
+                                            <li><a href="#."><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>Lorem ipsum dolor sit amet.</a></li>
+                                            <li><a href="#."><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>Consectetur adipiscing elit.</a></li>
+                                            <li><a href="#."><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>Etiam sed rutrum lorem.</a></li>
+                                            <li><a href="#."><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>Phasellus semper magna.</a></li>
+                                            <li><a href="#."><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>Nulla pharetra metus et tincidunt.</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <figure class="a_led">
+                                            <img class="a_img" src="images/led-img2.png" alt="">
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="content2" class="tab-pane fade">
+                                <p  class="a_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in vol.</p>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <ul class="a_list a_arrow_list">
+                                            <li><a href="#."><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>Lorem ipsum dolor sit amet.</a></li>
+                                            <li><a href="#."><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>Consectetur adipiscing elit.</a></li>
+                                            <li><a href="#."><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>Etiam sed rutrum lorem.</a></li>
+                                            <li><a href="#."><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>Phasellus semper magna.</a></li>
+                                            <li><a href="#."><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>Nulla pharetra metus et tincidunt.</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <figure class="a_led">
+                                            <img class="a_img" src="images/led-img2.png" alt="">
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="content3" class="tab-pane fade">
+                                <p  class="a_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in vol.</p>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <ul class="a_list a_arrow_list">
+                                            <li><a href="#."><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>Lorem ipsum dolor sit amet.</a></li>
+                                            <li><a href="#."><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>Consectetur adipiscing elit.</a></li>
+                                            <li><a href="#."><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>Etiam sed rutrum lorem.</a></li>
+                                            <li><a href="#."><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>Phasellus semper magna.</a></li>
+                                            <li><a href="#."><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>Nulla pharetra metus et tincidunt.</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <figure class="a_led">
+                                            <img class="a_img" src="images/led-img3.png" alt="">
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="content4" class="tab-pane fade">
+                                <p  class="a_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in vol.</p>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <ul class="a_list a_arrow_list">
+                                            <li><a href="#."><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>Lorem ipsum dolor sit amet.</a></li>
+                                            <li><a href="#."><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>Consectetur adipiscing elit.</a></li>
+                                            <li><a href="#."><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>Etiam sed rutrum lorem.</a></li>
+                                            <li><a href="#."><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>Phasellus semper magna.</a></li>
+                                            <li><a href="#."><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>Nulla pharetra metus et tincidunt.</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <figure class="a_led">
+                                            <img class="a_img" src="images/led-img4.png" alt="">
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="content5" class="tab-pane fade">
+                                <p  class="a_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in vol.</p>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <ul class="a_list a_arrow_list">
+                                            <li><a href="#."><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>Lorem ipsum dolor sit amet.</a></li>
+                                            <li><a href="#."><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>Consectetur adipiscing elit.</a></li>
+                                            <li><a href="#."><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>Etiam sed rutrum lorem.</a></li>
+                                            <li><a href="#."><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>Phasellus semper magna.</a></li>
+                                            <li><a href="#."><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>Nulla pharetra metus et tincidunt.</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <figure class="a_led">
+                                            <img class="a_img" src="images/led-img5.png" alt="">
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="content6" class="tab-pane fade">
+                                <p  class="a_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in vol.</p>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <ul class="a_list a_arrow_list">
+                                            <li><a href="#."><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>Lorem ipsum dolor sit amet.</a></li>
+                                            <li><a href="#."><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>Consectetur adipiscing elit.</a></li>
+                                            <li><a href="#."><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>Etiam sed rutrum lorem.</a></li>
+                                            <li><a href="#."><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>Phasellus semper magna.</a></li>
+                                            <li><a href="#."><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>Nulla pharetra metus et tincidunt.</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <figure class="a_led">
+                                            <img class="a_img" src="images/led-img6.png" alt="">
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="content7" class="tab-pane fade">
+                                <p  class="a_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in vol.</p>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <ul class="a_list a_arrow_list">
+                                            <li><a href="#."><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>Lorem ipsum dolor sit amet.</a></li>
+                                            <li><a href="#."><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>Consectetur adipiscing elit.</a></li>
+                                            <li><a href="#."><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>Etiam sed rutrum lorem.</a></li>
+                                            <li><a href="#."><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>Phasellus semper magna.</a></li>
+                                            <li><a href="#."><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>Nulla pharetra metus et tincidunt.</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <figure class="a_led">
+                                            <img class="a_img" src="images/led-img7.png" alt="">
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        
+                    </div>
+                </div>
+                <figure class="a_man_img">
+                    <img class="a_img" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=351%C3%97378&w=351&h=378" alt="">
+                </figure>
+            </div>
+        </div>
+        <!--Testimonial section start here-->
+        <div class=" a_section a_testimonial_section">
+            <div class="container">
+                <div id="tcb-testimonial-carousel" class="carousel slide" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <h4 class="a_h4">Our Clients Reviews about us</h4>
+                            <p class="a_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                            <span>John Snow  - <a href="#.">Google inc</a></span>
+                        </div>
+                        <div class="item">
+                            <h4 class="a_h4">Our Clients Reviews about us</h4>
+                            <p class="a_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                            <span>John Snow  - <a href="#.">Google inc</a></span>
+                        </div>
+                        <div class="item">
+                            <h4 class="a_h4">Our Clients Reviews about us</h4>
+                            <p class="a_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                            <span>John Snow  - <a href="#.">Google inc</a></span>
+                        </div>
+                    </div>
+                    <!-- Controls -->
+                    <div class="a_control">
+                        <a class="left carousel-control" href="#tcb-testimonial-carousel" data-slide="prev"> 
+                            <i class="fa fa-chevron-left" aria-hidden="true"></i> 
+                        </a>
+                        <a class="right carousel-control" href="#tcb-testimonial-carousel" data-slide="next"> 
+                            <i class="fa fa-chevron-right" aria-hidden="true"></i> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Profile section start here-->
+        <div class=" a_section a_profile_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="a_profile">
+                            <strong>2015-10-08</strong>
+                            <h5 class="a_h5">Take The Hardwork Out Of Support at cowthemes</h5>
+                            <p class="a_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <hr class="a_hr">
+                            <div class="a_profile_img">
+                                <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=351%C3%97378&w=30&h=30" alt="">
+                                <span>John Snow</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="a_profile">
+                            <strong>2015-10-08</strong>
+                            <h5 class="a_h5">Our New Partnership With <br>Handshake </h5>
+                            <p class="a_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <hr class="a_hr">
+                            <div class="a_profile_img">
+                                <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=351%C3%97378&w=30&h=30" alt="">
+                                <span>John Snow</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="a_profile">
+                            <strong>2015-10-08</strong>
+                            <h5 class="a_h5">Helpdesk is a premium Support Knowledge Base</h5>
+                            <p class="a_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <hr class="a_hr">
+                            <div class="a_profile_img">
+                                <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=351%C3%97378&w=30&h=30" alt="">
+                                <span>John Snow</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--footer start here-->
+    <footer class="a_footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="a_f_block">
+                        <div class="a_f_logo">
+                            <img src="images/logo.png" alt="">
+                        </div>
+                        <p>Help Desk ipsum dolor sit amet, con sectetur adipisicing elit, sed doing eiusm od tempor incididunt ut labore etics, dolore. magna aliqua. </p>
+                        <hr>
+                        <strong>Follow Us</strong>
+                        <ul class="a_list a_social_icons">
+                            <li><a href="#."><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#."><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#."><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            <li><a href="#."><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                            <li><a href="#."><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="a_f_block">
+                        <h5>Recent Post</h5>
+                        <div class="a_thumb">
+                            <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=351%C3%97378&w=61&h=61" alt="">
+                            <p>People Need Help of Us</p>
+                            <span>Dec 12, 2018</span>
+                        </div>
+                        <div class="a_thumb">
+                            <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=351%C3%97378&w=61&h=61" alt="">
+                            <p>Childs Like a Flower here</p>
+                            <span>Dec 12, 2018</span>
+                        </div>
+                        <div class="a_thumb">
+                            <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=351%C3%97378&w=61&h=61" alt="">
+                            <p>Super Story of  Volunteers</p>
+                            <span>Dec 12, 2018</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="a_f_block  a_address_block">
+                        <h5>FIND US AT</h5>
+                        <p>
+                            <strong>Main Office:</strong>
+                            <span>1234 Fleming Road Manhatten  Newyork US</span>
+                        </p>
+                        <p>
+                            <strong><a href="#."><i class="fa fa-phone" aria-hidden="true"></i> 0044 -123 4567 789</a></strong>
+                            <span><a href="#."><i class="fa fa-envelope-o" aria-hidden="true"></i> info@needcharity.com</a></span>
+                        </p>
+                        <p>
+                            <strong><a href="#."><i class="fa fa-phone" aria-hidden="true"></i> 0044 -123 4567 789</a></strong>
+                            <span><a href="#."><i class="fa fa-envelope-o" aria-hidden="true"></i> contact@needcharity.com</a></span>
+                        </p>
+                        <p>
+                            <span><i class="fa fa-calendar" aria-hidden="true"></i> Monday - Saturday: 8:00 Am - 18:00 Pm</span>
+                            <span>Sunday: Closed</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="a_f_block ">
+                        <h5>Newsletter</h5>
+                        <p>Accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium quas molestias except.</p>
+                        <hr>
+                        <form class="a_mail_form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Email Adress" name="emailAddress">
+                                <button type="button" class="btn "><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="a_copyright">
+            <div class="container">
+                <div class="a_copyright_left">
+                    <p>Copyright &copy; 2016 <a href="#.">Helpdesk</a>. All right reserved</p>
+                </div>
+                <div class="a_copyright_right">
+                    <p><a href="#.">About Us</a>  -  <a href="#.">Contact  Us</a>  -  <a href="#.">Join us</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+    <!--Bootstrap core JavaScript-->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>
